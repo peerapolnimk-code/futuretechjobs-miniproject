@@ -6,7 +6,7 @@
     <title>FutureTechJobs - Next-Gen AI & Tech Careers</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="dark-theme">
     <header class="main-header">
@@ -251,21 +251,16 @@
             </div>
         </div>
     </main>
-
-    <!-- Modal 1: Job Details -->
     <div id="modalDetail" class="custom-modal" onclick="if(event.target === this) closeJobDetail()">
         <div class="modal-card modal-lg">
             <button class="modal-close" onclick="closeJobDetail()">&times;</button>
             <div id="detailContent"></div>
         </div>
     </div>
-
-    <!-- Modal 2: Apply / Register Form -->
     <div id="modalApply" class="custom-modal" onclick="if(event.target === this) closeApplyForm()">
         <div class="modal-card">
             <button class="modal-close" onclick="closeApplyForm()">&times;</button>
             <h3 id="formJobTitle" style="color: #38bdf8; margin-bottom: 1rem;">แบบฟอร์มส่งข้อมูล</h3>
-            
             <div id="validationError" class="alert-box" style="display: none; background: rgba(239, 68, 68, 0.2); border: 1px solid #ef4444; color: #fca5a5; padding: 0.8rem; border-radius: 8px; margin-bottom: 1rem; font-size: 0.85rem;"></div>
 
             <form id="jobForm" onsubmit="processSubmit(event)">
@@ -274,7 +269,6 @@
                     <select id="targetSelect" style="width: 100%; padding: 0.6rem; background: #0f172a; border: 1px solid #334155; color: #fff; border-radius: 6px;">
                     </select>
                 </div>
-
                 <div class="input-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-bottom: 1rem;">
                     <div class="field-box">
                         <label style="display: block; margin-bottom: 0.3rem; font-size: 0.85rem; color: #94a3b8;">ชื่อ *</label>
@@ -285,7 +279,6 @@
                         <input type="text" id="lName" placeholder="กรอกนามสกุล" style="width: 100%; padding: 0.6rem; background: #0f172a; border: 1px solid #334155; color: #fff; border-radius: 6px;">
                     </div>
                 </div>
-
                 <div class="input-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-bottom: 1rem;">
                     <div class="field-box">
                         <label style="display: block; margin-bottom: 0.3rem; font-size: 0.85rem; color: #94a3b8;">อีเมล *</label>
@@ -296,7 +289,6 @@
                         <input type="tel" id="uPhone" placeholder="08X-XXX-XXXX" style="width: 100%; padding: 0.6rem; background: #0f172a; border: 1px solid #334155; color: #fff; border-radius: 6px;">
                     </div>
                 </div>
-
                 <div class="input-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-bottom: 1rem;">
                     <div class="field-box">
                         <label style="display: block; margin-bottom: 0.3rem; font-size: 0.85rem; color: #94a3b8;">เพศ *</label>
@@ -317,12 +309,10 @@
                         </select>
                     </div>
                 </div>
-
                 <div class="field-box full" style="margin-bottom: 1rem;">
                     <label style="display: block; margin-bottom: 0.3rem; font-size: 0.85rem; color: #94a3b8;">ที่อยู่ *</label>
                     <textarea id="uAddress" rows="2" placeholder="ที่อยู่ปัจจุบัน..." style="width: 100%; padding: 0.6rem; background: #0f172a; border: 1px solid #334155; color: #fff; border-radius: 6px; resize: vertical;"></textarea>
                 </div>
-
                 <div class="input-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-bottom: 1.5rem;">
                     <div class="field-box">
                         <label style="display: block; margin-bottom: 0.3rem; font-size: 0.85rem; color: #94a3b8;">รหัสไปรษณีย์ *</label>
@@ -339,6 +329,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
