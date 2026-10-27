@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTechJobs - Next-Gen AI & Tech Careers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- เรียกใช้งานไฟล์ CSS จากโฟลเดอร์ css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Navbar -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="brand-logo">
+                <i class="fa-solid fa-bolt-lightning text-neon"></i>
+                <span>FutureTech<span class="text-gradient">Jobs</span></span>
+            </div>
+            <nav class="navigation">
+                <a href="javascript:void(0)" id="link-home" class="nav-btn active" onclick="navigate('home')"><i class="fa-solid fa-house-laptop"></i> Home</a>
+                <a href="javascript:void(0)" id="link-services" class="nav-btn" onclick="navigate('services')"><i class="fa-solid fa-graduation-cap"></i> Services & Certify</a>
+                <a href="javascript:void(0)" id="link-about" class="nav-btn" onclick="navigate('about')"><i class="fa-solid fa-shield-halved"></i> About TOR</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= PAGE 1: HOME PAGE ================= -->
+    <main id="page-home" class="view-page active">
+        <section class="futuristic-hero">
+            <h1>ขับเคลื่อนอาชีพคุณเข้าสู่ยุค <br><span class="text-gradient">Artificial Intelligence</span></h1>
+            <p>ศูนย์รวมตำแหน่งงานสายปัญญาประดิษฐ์ ดิจิทัล และหลักสูตรสอบใบรับรองสากลระดับสูง</p>
+        </section>
+
+        <section class="why-us-futuristic">
+            <div class="section-tag">WHY WORK WITH US</div>
+            <h2>ทำไมต้องร่วมงานสาย AI กับเรา?</h2>
+            
+            <div class="glow-cards-grid">
+                <div class="glow-card">
+                    <div class="card-icon cyan"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>นวัตกรรม AI ระดับแถวหน้า</h3>
+                    <p>ร่วมพัฒนาและประยุกต์ใช้โมเดล Generative AI, LLMs และระบบอัตโนมัติร่วมกับองค์กรเทคโนโลยีชั้นนำ</p>
+                    <div class="card-stat">+150 Projects</div>
+                </div>
+
+                <div class="glow-card feature">
+                    <div class="card-icon purple"><i class="fa-solid fa-rocket"></i></div>
+                    <h3>เติบโตก้าวกระโดด 300%</h3>
+                    <p>เราสนับสนุนงบสอบใบรับรองสากล (Certifications) และสวัสดิการส่งเสริมการพัฒนาทักษะรายบุคคล</p>
+                    <div class="card-stat">Fast-Track Career</div>
+                </div>
+
+                <div class="glow-card">
+                    <div class="card-icon green"><i class="fa-solid fa-globe"></i></div>
+                    <h3>สไตล์การทำงานยุคใหม่</h3>
+                    <p>ให้อิสระในการทำงานด้วยรูปแบบ Remote 100% หรือ Hybrid พร้อมอุปกรณ์และเครื่องมือซอฟต์แวร์ลิขสิทธิ์แท้</p>
+                    <div class="card-stat">Work Anywhere</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="jobs-display">
+            <div class="jobs-header">
+                <h2><i class="fa-solid fa-fire text-neon"></i> ตำแหน่งงาน AI ล่าสุดในประเทศไทย</h2>
+            </div>
+
+            <div class="job-cards-container">
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge purple">AI & ML</span>
+                        <h3>1. AI & Machine Learning Engineer</h3>
+                        <p style="color: #38bdf8; font-size: 0.9rem; margin-top: 0.2rem;">🏢 KBTG (Kasikorn Business-Technology Group)</p>
+                        <p class="salary-tag"><i class="fa-solid fa-coins"></i> 65,000 - 110,000 บาท/เดือน</p>
+                        <p class="job-desc">พัฒนาและ Deploy โมเดล Machine Learning เข้าสู่ระบบแบงก์กิ้งระดับประเทศ</p>
+                    </div>
+                    <button class="btn-action" onclick="openJobDetail(1)">ดูรายละเอียด <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge cyan">Data Science</span>
+                        <h3>2. Senior Data Scientist</h3>
+                        <p style="color: #38bdf8; font-size: 0.9rem; margin-top: 0.2rem;">🏢 True Digital Group Co., Ltd.</p>
+                        <p class="salary-tag"><i class="fa-solid fa-coins"></i> 70,000 - 120,000 บาท/เดือน</p>
+                        <p class="job-desc">วิเคราะห์ Big Data สร้าง Predictive Analytics Models สนับสนุนธุรกิจดิจิทัล</p>
+                    </div>
+                    <button class="btn-action" onclick="openJobDetail(2)">ดูรายละเอียด <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge green">Generative AI</span>
+                        <h3>3. Prompt Engineer & LLM Specialist</h3>
+                        <p style="color: #38bdf8; font-size: 0.9rem; margin-top: 0.2rem;">🏢 SCB 10X</p>
+                        <p class="salary-tag"><i class="fa-solid fa-coins"></i> 60,000 - 100,000 บาท/เดือน</p>
+                        <p class="job-desc">ออกแบบ Prompt สถาปัตยกรรม RAG และ Fine-Tuning LLMs สำหรับฟินเทค</p>
+                    </div>
+                    <button class="btn-action" onclick="openJobDetail(3)">ดูรายละเอียด <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge amber">Development</span>
+                        <h3>4. Full-Stack AI Developer</h3>
+                        <p style="color: #38bdf8; font-size: 0.9rem; margin-top: 0.2rem;">🏢 LINE Man Wongnai</p>
+                        <p class="salary-tag"><i class="fa-solid fa-coins"></i> 55,000 - 95,000 บาท/เดือน</p>
+                        <p class="job-desc">พัฒนาระบบเว็บแอปพลิเคชันเชื่อมต่อ AI API รองรับผู้ใช้งานหลักล้านคน</p>
+                    </div>
+                    <button class="btn-action" onclick="openJobDetail(4)">ดูรายละเอียด <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge red">Cloud Tech</span>
+                        <h3>5. Cloud & AI Infrastructure Engineer</h3>
+                        <p style="color: #38bdf8; font-size: 0.9rem; margin-top: 0.2rem;">🏢 AIS (Advanced Info Service)</p>
+                        <p class="salary-tag"><i class="fa-solid fa-coins"></i> 65,000 - 110,000 บาท/เดือน</p>
+                        <p class="job-desc">บริหารจัดการโครงสร้างพื้นฐานบน Cloud และ GPU Cluster รองรับงาน AI</p>
+                    </div>
+                    <button class="btn-action" onclick="openJobDetail(5)">ดูรายละเอียด <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= PAGE 2: SERVICES & CERTIFY ================= -->
+    <main id="page-services" class="view-page">
+        <section class="futuristic-hero">
+            <h1>Training & <span class="text-gradient">Certifications</span></h1>
+            <p>หลักสูตรอบรมเชิงปฏิบัติการ และศูนย์จัดสอบรับรองมาตรฐานสากลด้าน AI & Digital</p>
+        </section>
+
+        <section class="jobs-display">
+            <div class="jobs-header">
+                <h2><i class="fa-solid fa-graduation-cap text-neon"></i> หลักสูตรอบรม & สอบ Certify ทั้งหมด (8 หลักสูตร)</h2>
+            </div>
+
+            <div class="job-cards-container">
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge purple">Certify</span>
+                        <h3>1. Certified Generative AI & LLM Engineer Masterclass</h3>
+                        <p style="color: #10b981; font-weight: 600; margin-top: 0.2rem;">💵 ค่าลงทะเบียน: 12,500 บาท (30 ชั่วโมง)</p>
+                        <p class="job-desc">เรียนรู้สถาปัตยกรรม Transformer, RAG และ Fine-tuning Llama3 พร้อมรับใบ Certify สากล</p>
+                    </div>
+                    <button class="btn-action" onclick="openApplyFormForCourse('Certified Generative AI & LLM Engineer Masterclass')">ลงทะเบียนอบรม <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge cyan">Certify</span>
+                        <h3>2. Professional Data Science & Big Data Analytics</h3>
+                        <p style="color: #10b981; font-weight: 600; margin-top: 0.2rem;">💵 ค่าลงทะเบียน: 9,900 บาท (24 ชั่วโมง)</p>
+                        <p class="job-desc">เจาะลึก Big Data Tools, Predictive Analytics และ Data Visualization ระดับมืออาชีพ</p>
+                    </div>
+                    <button class="btn-action" onclick="openApplyFormForCourse('Professional Data Science & Big Data Analytics')">ลงทะเบียนอบรม <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge green">Certify</span>
+                        <h3>3. Advanced Prompt Engineering for Enterprise AI</h3>
+                        <p style="color: #10b981; font-weight: 600; margin-top: 0.2rem;">💵 ค่าลงทะเบียน: 5,900 บาท (12 ชั่วโมง)</p>
+                        <p class="job-desc">เทคนิคการเขียน Prompt ขั้นสูง, Chain-of-Thought และการสร้าง AI Agent ในองค์กร</p>
+                    </div>
+                    <button class="btn-action" onclick="openApplyFormForCourse('Advanced Prompt Engineering for Enterprise AI')">ลงทะเบียนอบรม <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge amber">Certify</span>
+                        <h3>4. Full-Stack AI Application Developer Bootcamp</h3>
+                        <p style="color: #10b981; font-weight: 600; margin-top: 0.2rem;">💵 ค่าลงทะเบียน: 15,000 บาท (40 ชั่วโมง)</p>
+                        <p class="job-desc">พัฒนาเว็บแอปยุคใหม่เชื่อมต่อ LLM APIs ด้วย Next.js และ Python FastAPI</p>
+                    </div>
+                    <button class="btn-action" onclick="openApplyFormForCourse('Full-Stack AI Application Developer Bootcamp')">ลงทะเบียนอบรม <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge red">Certify</span>
+                        <h3>5. Cloud & AI Infrastructure DevOps Masterclass</h3>
+                        <p style="color: #10b981; font-weight: 600; margin-top: 0.2rem;">💵 ค่าลงทะเบียน: 11,000 บาท (25 ชั่วโมง)</p>
+                        <p class="job-desc">บริหาร Docker, Kubernetes และ GPU Clustering รองรับระบบประมวลผล Deep Learning</p>
+                    </div>
+                    <button class="btn-action" onclick="openApplyFormForCourse('Cloud & AI Infrastructure DevOps Masterclass')">ลงทะเบียนอบรม <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge purple">Certify</span>
+                        <h3>6. AI Cybersecurity & Data Privacy Governance</h3>
+                        <p style="color: #10b981; font-weight: 600; margin-top: 0.2rem;">💵 ค่าลงทะเบียน: 8,500 บาท (16 ชั่วโมง)</p>
+                        <p class="job-desc">เรียนรู้กฎหมาย PDPA, AI Ethics และการป้องกันช่องโหว่ความปลอดภัย Prompt Injection</p>
+                    </div>
+                    <button class="btn-action" onclick="openApplyFormForCourse('AI Cybersecurity & Data Privacy Governance')">ลงทะเบียนอบรม <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge cyan">Certify</span>
+                        <h3>7. Business Intelligence & AI for Executive Leaders</h3>
+                        <p style="color: #10b981; font-weight: 600; margin-top: 0.2rem;">💵 ค่าลงทะเบียน: 7,500 บาท (10 ชั่วโมง)</p>
+                        <p class="job-desc">กลยุทธ์การนำ AI และ Data Transformation ไปขับเคลื่อนองค์กรสำหรับผู้บริหาร</p>
+                    </div>
+                    <button class="btn-action" onclick="openApplyFormForCourse('Business Intelligence & AI for Executive Leaders')">ลงทะเบียนอบรม <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="modern-job-card">
+                    <div class="job-meta">
+                        <span class="job-badge green">Certify</span>
+                        <h3>8. UI/UX Design for AI-Powered Products & Web</h3>
+                        <p style="color: #10b981; font-weight: 600; margin-top: 0.2rem;">💵 ค่าลงทะเบียน: 8,900 บาท (18 ชั่วโมง)</p>
+                        <p class="job-desc">ออกแบบ Conversational UI และ Prototype สำหรับแอปพลิเคชัน AI ยุคใหม่</p>
+                    </div>
+                    <button class="btn-action" onclick="openApplyFormForCourse('UI/UX Design for AI-Powered Products & Web')">ลงทะเบียนอบรม <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= PAGE 3: ABOUT PAGE (TOR) ================= -->
+    <main id="page-about" class="view-page">
+        <section class="futuristic-hero">
+            <h1>About <span class="text-gradient">FutureTechJobs</span></h1>
+            <p>ศูนย์กลางนวัตกรรมและการขับเคลื่อนบุคลากรด้าน AI & Tech สู่ระดับสากล</p>
+        </section>
+
+        <div class="about-container">
+            <div class="glow-cards-grid" style="margin-bottom: 2rem;">
+                <div class="glow-card">
+                    <div class="card-icon cyan"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <h3>ประวัติความเป็นมา</h3>
+                    <p>FutureTechJobs ก่อตั้งขึ้นเพื่อเป็นสะพานเชื่อมระหว่างองค์กรเทคโนโลยีชั้นนำในประเทศไทย กับบุคลากรสายงานปัญญาประดิษฐ์ (AI), Data Science และ Cloud Computing มุ่งเน้นการยกระดับทักษะแรงงานไทยให้เท่าทันกับเทคโนโลยียุคใหม่</p>
+                </div>
+
+                <div class="glow-card feature">
+                    <div class="card-icon purple"><i class="fa-solid fa-eye"></i></div>
+                    <h3>วิสัยทัศน์ของเรา (Our Vision)</h3>
+                    <p>มุ่งสู่การเป็นแพลตฟอร์มสรรหาและพัฒนาบุคลากรสายงาน AI อันดับ 1 ในภูมิภาคอาเซียน เพื่อขับเคลื่อนเศรษฐกิจดิจิทัล สร้างโอกาสทางอาชีพที่ไร้ขีดจำกัด และผลักดันมาตรฐานใบรับรองสากลระดับสูง</p>
+                </div>
+            </div>
+
+            <div class="tor-box" style="margin-bottom: 2rem;">
+                <h3><i class="fa-solid fa-gem text-neon"></i> ค่านิยมองค์กร (Core Values)</h3>
+                <div class="glow-cards-grid" style="margin-top: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 10px; border: 1px solid var(--border-color);">
+                        <h4 style="color: var(--neon-cyan);"><i class="fa-solid fa-lightbulb"></i> Innovation First</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.5rem;">ผลักดันและเปิดรับเทคโนโลยีใหม่ๆ อยู่เสมอ</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 10px; border: 1px solid var(--border-color);">
+                        <h4 style="color: var(--neon-purple);"><i class="fa-solid fa-chart-line"></i> Continuous Growth</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.5rem;">สนับสนุนการเรียนรู้และการพัฒนาทักษะอย่างไร้ขีดจำกัด</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.03); padding: 1.2rem; border-radius: 10px; border: 1px solid var(--border-color);">
+                        <h4 style="color: #10b981;"><i class="fa-solid fa-handshake"></i> Integrity & Trust</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.5rem;">มุ่งมั่นสร้างความโปร่งใสและน่าเชื่อถือให้แก่ผู้ใช้งาน</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glow-cards-grid" style="margin-bottom: 2rem;">
+                <div class="glow-card feature">
+                    <div class="card-icon cyan"><i class="fa-solid fa-building text-neon"></i></div>
+                    <h3>ข้อมูลบริษัท (Company Info)</h3>
+                    <div style="font-size: 0.95rem; color: var(--text-dim); margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                        <p><i class="fa-solid fa-industry text-neon" style="width: 20px;"></i> <strong>ชื่อบริษัท:</strong> บริษัท ฟิวเจอร์เทค จ็อบส์ จำกัด (FutureTechJobs Co., Ltd.)</p>
+                        <p><i class="fa-solid fa-user text-neon" style="width: 20px;"></i> <strong>ชื่อผู้ติดต่อ:</strong> พีระพล นิ่มเขียว</p>
+                        <p><i class="fa-solid fa-id-card text-neon" style="width: 20px;"></i> <strong>รหัสนักศึกษา:</strong> 1680706353</p>
+                    </div>
+                </div>
+
+                <div class="glow-card">
+                    <div class="card-icon green"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>ช่องทางการติดต่อ (Contact Details)</h3>
+                    <div style="font-size: 0.9rem; color: var(--text-dim); margin-top: 0.8rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                        <p><i class="fa-solid fa-map-location-dot text-neon" style="width: 20px;"></i> <strong>ที่อยู่บริษัท / สถานศึกษา:</strong> มหาวิทยาลัยกรุงเทพ เลขที่ 9/1 หมู่ 5 ถ.พหลโยธิน ต.คลองหนึ่ง อ.คลองหลวง จ.ปทุมธานี 12120</p>
+                        <p><i class="fa-solid fa-envelope text-neon" style="width: 20px;"></i> <strong>อีเมล:</strong> <a href="mailto:Peerapol.nimk@bumail.net" style="color: var(--neon-cyan); text-decoration: none;">Peerapol.nimk@bumail.net</a></p>
+                        <p><i class="fa-solid fa-phone text-neon" style="width: 20px;"></i> <strong>เบอร์โทรศัพท์:</strong> <a href="tel:0821604048" style="color: var(--neon-cyan); text-decoration: none;">082-160-4048</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tor-box">
+                <h3><i class="fa-solid fa-list-check"></i> ข้อกำหนดและขอบเขตงาน (TOR Checklist)</h3>
+                <div class="tor-list">
+                    <div class="tor-item"><i class="fa-solid fa-circle-check text-neon"></i> เว็บไซต์รองรับการสมัครงานในตำแหน่ง AI และดิจิทัลชั้นนำ[cite: 1]</div>
+                    <div class="tor-item"><i class="fa-solid fa-circle-check text-neon"></i> เว็บไซต์มีระบบข้อมูลการจัดอบรม สัมมนา และการสอบ Certify สากล[cite: 1]</div>
+                    <div class="tor-item"><i class="fa-solid fa-circle-check text-neon"></i> หน้าเว็บแสดงผลแบบ Responsive รองรับทั้ง Desktop, Tablet และ Mobile[cite: 1]</div>
+                    <div class="tor-item"><i class="fa-solid fa-circle-check text-neon"></i> มีระบบฟอร์มสมัครงาน/ลงทะเบียนพร้อมระบบตรวจสอบความถูกต้อง (Validation)[cite: 1]</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <div id="modalDetail" class="custom-modal">
+        <div class="modal-card modal-lg">
+            <button class="modal-close" onclick="closeJobDetail()">&times;</button>
+            <div id="detailContent"></div>
+        </div>
+    </div>
+
+    <div id="modalApply" class="custom-modal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeApplyForm()">&times;</button>
+            <h3 id="formJobTitle">แบบฟอร์มส่งข้อมูล</h3>
+            <div id="validationError" class="alert-box"></div>
+            <form id="jobForm" onsubmit="processSubmit(event)">
+                <div class="field-box full">
+                    <label id="targetLabel">รายการที่ต้องการสมัคร / ลงทะเบียน *</label>
+                    <select id="targetSelect"></select>
+                </div>
+                <div class="input-grid">
+                    <div class="field-box"><label>ชื่อ *</label><input type="text" id="fName" placeholder="กรอกชื่อจริง"></div>
+                    <div class="field-box"><label>นามสกุล *</label><input type="text" id="lName" placeholder="กรอกนามสกุล"></div>
+                </div>
+                <div class="input-grid">
+                    <div class="field-box"><label>อีเมล *</label><input type="email" id="uEmail" placeholder="name@domain.com"></div>
+                    <div class="field-box"><label>เบอร์โทรศัพท์ *</label><input type="tel" id="uPhone" placeholder="08X-XXX-XXXX"></div>
+                </div>
+                <div class="input-grid">
+                    <div class="field-box"><label>เพศ *</label>
+                        <select id="uGender">
+                            <option value="">-- เลือกเพศ --</option>
+                            <option value="ชาย">ชาย</option>
+                            <option value="หญิง">หญิง</option>
+                            <option value="อื่นๆ">อื่นๆ</option>
+                        </select>
+                    </div>
+                    <div class="field-box"><label>ประเทศ *</label>
+                        <select id="uCountry">
+                            <option value="ประเทศไทย">ประเทศไทย</option>
+                            <option value="จีน">จีน</option>
+                            <option value="สหรัฐอเมริกา">สหรัฐอเมริกา</option>
+                            <option value="ฝรั่งเศส">ฝรั่งเศส</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field-box full"><label>ที่อยู่ *</label><textarea id="uAddress" rows="2" placeholder="ที่อยู่ปัจจุบัน..."></textarea></div>
+                <div class="input-grid">
+                    <div class="field-box"><label>รหัสไปรษณีย์ *</label><input type="text" id="uZip" placeholder="10XXX"></div>
+                    <div class="field-box" id="resumeFieldGroup"><label id="resumeLabel">อัปโหลด Portfolio / Resume (PDF) *</label><input type="file" id="uResume" accept=".pdf,.doc,.docx"></div>
+                </div>
+                <button type="submit" class="btn-submit-neon">ยืนยันส่งข้อมูล</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- เรียกใช้ไฟล์ JavaScript จากโฟลเดอร์ js -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
