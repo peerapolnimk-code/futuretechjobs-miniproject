@@ -1,4 +1,3 @@
-// Data Definitions
 const jobOptions = [
     { value: "AI & Machine Learning Engineer", label: "1. AI & Machine Learning Engineer (KBTG)" },
     { value: "Senior Data Scientist", label: "2. Senior Data Scientist (True Digital)" },
@@ -61,7 +60,6 @@ const jobDetailsData = {
     }
 };
 
-// 1. Page Navigation System
 function navigate(pageId) {
     const pages = document.querySelectorAll('.view-page');
     pages.forEach(page => page.classList.remove('active'));
@@ -78,7 +76,6 @@ function navigate(pageId) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// 2. Job Detail Modal Handler
 function openJobDetail(jobId) {
     const modal = document.getElementById('modalDetail');
     const content = document.getElementById('detailContent');
@@ -112,51 +109,46 @@ function openJobDetail(jobId) {
             </ul>
 
             <div style="margin-top: 1.5rem; text-align: right;">
-                <button class="btn-action" style="padding: 0.6rem 1.2rem; font-weight: 600;" onclick="closeJobDetail(); openApplyFormForCourse('${job.title}')">สมัครตำแหน่งนี้ <i class="fa-solid fa-arrow-right"></i></button>
+                <button class="btn-action" style="padding: 0.6rem 1.2rem; font-weight: 600;" onclick="closeJobDetail(); openApplyFormForCourse('${job.title}', true)">สมัครตำแหน่งนี้ <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         `;
     }
 
-    if (modal) {
-        modal.classList.add('is-open');
-    }
+    if (modal) modal.classList.add('is-open');
 }
 
 function closeJobDetail() {
     const modal = document.getElementById('modalDetail');
-    if (modal) {
-        modal.classList.remove('is-open');
-    }
+    if (modal) modal.classList.remove('is-open');
 }
 
-// 3. Application / Course Registration Form Modal Handler
-function openApplyFormForCourse(courseOrJobName) {
+function openApplyFormForCourse(courseOrJobName, isJob = false) {
     const modal = document.getElementById('modalApply');
     const formTitle = document.getElementById('formJobTitle');
     const selectEl = document.getElementById('targetSelect');
+    const resumeGroup = document.getElementById('resumeFieldGroup');
 
     if (formTitle) {
-        formTitle.innerText = "ลงทะเบียน / สมัคร: " + courseOrJobName;
+        formTitle.innerText = isJob ? "สมัครงาน: " + courseOrJobName : "ลงทะเบียนอบรม: " + courseOrJobName;
     }
 
     if (selectEl) {
-        const allOptions = [...jobOptions, ...courseOptions];
+        const allOptions = isJob ? jobOptions : courseOptions;
         selectEl.innerHTML = allOptions.map(opt => `<option value="${opt.value}" ${opt.value === courseOrJobName ? 'selected' : ''}>${opt.label}</option>`).join('');
     }
 
-    if (modal) {
-        modal.classList.add('is-open');
+    if (resumeGroup) {
+        resumeGroup.style.display = isJob ? 'block' : 'none';
     }
+
+    if (modal) modal.classList.add('is-open');
 }
 
 function closeApplyForm() {
     const modal = document.getElementById('modalApply');
-    if (modal) {
-        modal.classList.remove('is-open');
-    }
+    if (modal) modal.classList.remove('is-open');
 }
 
-// 4. Form Validation & Submission Process
 function processSubmit(event) {
     event.preventDefault();
     
@@ -189,15 +181,11 @@ function processSubmit(event) {
         return;
     }
 
-    if (alertBox) {
-        alertBox.style.display = "none";
-    }
+    if (alertBox) alertBox.style.display = "none";
 
-    alert("✨ ดำเนินการสำเร็จ!\nระบบบันทึกข้อมูลการสมัครเรียบร้อยแล้ว");
+    alert("✨ ดำเนินการสำเร็จ!\nระบบบันทึกข้อมูลเรียบร้อยแล้ว");
     closeApplyForm();
     
     const jobForm = document.getElementById('jobForm');
-    if (jobForm) {
-        jobForm.reset();
-    }
+    if (jobForm) jobForm.reset();
 }
